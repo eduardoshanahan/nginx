@@ -11,7 +11,13 @@ docker build -t eduardoshanahan/nginx .
 ## Running a test
 
 ```bash
-docker run --rm -p 8080:80 -v content:/usr/share/nginx/html:ro -d eduardoshanahan/nginx:latest
+docker run --rm -p 8080:80 -v content:/usr/share/nginx/html:ro eduardoshanahan/nginx:latest
+```
+
+Then you can curl to:
+
+```bash
+curl localhost:8080
 ```
 
 ## Development
