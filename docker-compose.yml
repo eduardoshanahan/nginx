@@ -1,0 +1,9 @@
+version: "2"
+services:
+  nginx:
+    image: eduardoshanahan/nginx:latest
+    container_name: nginx-test
+    ports:
+      - 8080:80
+    volumes:
+      - ./content:/usr/share/nginx/html:ro
