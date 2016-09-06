@@ -1,6 +1,6 @@
 # Nginx
 
-A Docker image with [Nginx](https://nginx.org/en/)
+A Docker image with [Nginx](https://nginx.org/en/), based in [Docker Nginx](https://hub.docker.com/r/_/nginx/)
 
 ## Building
 
