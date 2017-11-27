@@ -1,5 +1,7 @@
-version: "2"
+version: "3"
+
 services:
+
   nginx:
     image: eduardoshanahan/nginx:latest
     container_name: nginx-test

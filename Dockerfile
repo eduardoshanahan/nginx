@@ -1,3 +1,3 @@
-FROM nginx:1.11.3-alpine
+FROM nginx:1.13.7-alpine
 
-MAINTAINER Eduardo Shanahan <contact@eduardoshanahan.com>
+LABEL maintainer "Eduardo Shanahan <contact@eduardoshanahan.com>"
