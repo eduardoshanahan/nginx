@@ -4,25 +4,42 @@ A Docker image with [Nginx](https://nginx.org/en/), based in [Docker Nginx](http
 
 ## Building
 
-```bash
+```
 docker build . -t eduardoshanahan/nginx:latest
 ```
 
-## Running a test
+## Running an interactive test
 
-```bash
+```
 docker run --rm -p 8080:80 -v $(pwd)/content:/usr/share/nginx/html:ro eduardoshanahan/nginx:latest
 ```
 
-Or you can use Docker Compose:
+Or with Docker Compose
 
-```bash
+```
 docker-compose up
 ```
 
 Then you can curl to:
 
-```bash
+```
 curl localhost:8080
 ```
 
+## Building an image in Docker Hub
+
+If for any reason the tagged build fails, you can fire a fresh one running
+
+```
+./build_image.sh
+```
+
+## Development
+
+To send the commits to the remote server, you can use the script
+
+```
+./save.sh
+```
+
+which will also create a new tag if the version is updated.
