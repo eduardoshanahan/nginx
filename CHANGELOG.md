@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.13.7.2] - 2017-12-15
+
+* Changed: Updated docker compose to 3.4
+
 ## [1.13.7.1] - 2017-12-14
 
 * Changed: Updated instructions

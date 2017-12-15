@@ -1,4 +1,4 @@
-version: "3"
+version: "3.4"
 
 services:
 
@@ -6,10 +6,14 @@ services:
     image: eduardoshanahan/nginx:latest
     container_name: es_nginx
     ports:
-      - 8080:80
+      - target: 80
+        published: 8080
     volumes:
-      - ./content:/usr/share/nginx/html:ro
+      - type: bind
+        source: ./content
+        target: /usr/share/nginx/html
+        read_only: true
     command:
       - nginx
-      - '-g'
-      - 'daemon off;'
+      - "-g"
+      - "daemon off;"
